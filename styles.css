@@ -1,0 +1,100 @@
+body {
+    background-color: #f3f6f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 900px;
+}
+
+#curriculo {
+    border-left: 5px solid #0d6efd;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto-wrapper {
+    width: 10px;
+    height: 10px;
+    border-radius: 10%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #000911;
+    background-color: #fff;
+}
+
+.profile-img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sobre-mim {
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+.content-section {
+    margin-top: 20px;
+}
+
+.highlight {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.list-group-item {
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #ffffff;
+}
+
+.list-group-item {
+    background-color: #e9ecef;
+    border-radius: 8px;
+}
+
+.table-bordered th {
+    background-color: #06b0ff;
+    color: white;
+}
+
+.foto-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;  /* Garante que a imagem se ajuste sem distorcer */
+    border-radius: 70%;  /* Faz a imagem ficar circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Adiciona sombra */
+    border: 3px solid #0d6efd;
+}
+
+

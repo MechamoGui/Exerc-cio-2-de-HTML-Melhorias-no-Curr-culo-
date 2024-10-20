@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo e Formulário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container my-5">
+        
+        <section id="curriculo" class="rounded shadow p-4 mb-5 bg-white">
+            <div class="text-center">
+                <h1 class="my-3">Guilherme Victor de Melo Gonçalves</h1>
+                <h5 class="text-muted">Desenvolvedor Full Stack</h5>
+                <p class="badge bg-primary p-2 mt-2">Disponível para Contato e novos projetos</p>
+                <p class="badge bg-primary p-2 mt-2">Veja também meu Currículo <a link href="currículo.html" class="btn btn-info mt-0"> </a></p>
+            </div>
+
+            <hr>
+
+            <div class="content-section">
+                <h3>Sobre Mim</h3>
+                <p>Desenvolvedor com foco em inovação, especializado em soluções de ponta para web e mobile. Apaixonado por aprendizado contínuo e desafios tecnológicos. Domínio de HTML, CSS e JavaScript, utilizando frameworks como React e Vue.js para construir aplicações web dinâmicas e responsivas. Mas o que realmente me diferencia é o meu conhecimento em linguagens back-end, como Node.js, Python e Ruby.</p>
+            </div>
+
+            <div class="content-section highlight">
+                <h3>Experiência</h3>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item border-0 shadow-sm">
+                        <h5 class="text-info">Accenture</h5>
+                        <p class="mb-1">Desenvolvedor, Jan 2020 - Dez 2021</p>
+                        <span class="badge bg-secondary">JavaScript</span> <span class="badge bg-secondary">React</span>
+                    </li>
+                    <li class="list-group-item border-0 shadow-sm">
+                        <h5 class="text-info">Senac PE</h5>
+                        <p class="mb-1">Analista de Sistemas, Mar 2018 - Dez 2019</p>
+                        <span class="badge bg-secondary">Python</span> <span class="badge bg-secondary">Java</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-section highlight">
+                <h3>Contato</h3>
+                <ul class="list-group">
+                    <li class="list-group-item border-0">
+                        <i class="bi bi-telephone-fill text-success"></i> (81) 98346-1746
+                    </li>
+                    <li class="list-group-item border-0">
+                        <i class="bi bi-envelope-fill text-danger"></i> gv93298@gmail.com
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+
+        
+        <section id="formulario" class="rounded shadow p-4 bg-light">
+            <h1 class="text-center mb-4">Formulário de Serviço</h1>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control border-info" id="nome" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="sobrenome" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control border-info" id="sobrenome" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control border-success" id="telefone" required pattern="\(\d{2}\) \d{5}-\d{4}">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control border-danger" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="lingua" class="form-label">Língua</label>
+                    <select class="form-select border-primary" id="lingua" required>
+                        <option value="">Selecione</option>
+                        <option value="ingles">Inglês</option>
+                        <option value="espanhol">Espanhol</option>
+                        <option value="frances">Francês</option>
+                        <option value="portugues">Português (pt-br)</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="arquivo" class="form-label">Upload de Arquivo</label>
+                    <input type="file" class="form-control" id="arquivo" accept=".pdf,.doc,.docx,.jpeg,.png" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Banco de Dados</label><br>
+                    <input type="radio" name="banco" value="mysql" required> MySQL
+                    <input type="radio" name="banco" value="postgres"> PostgreSQL
+                    <input type="radio" name="banco" value="mongodb"> MongoDB
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button type="reset" class="btn btn-secondary">Limpar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
